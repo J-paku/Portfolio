@@ -418,11 +418,14 @@ p   {
         border-radius: 50%;
         padding: 10px;
         background-color: var(--color-pink);
-        display: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .25s ease-in;
     }
 
     .topPage.visible{
-        display: block;
+        opacity: 0.95;
+        pointer-events: auto;
     }
 
     .topPage > i {
