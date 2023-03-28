@@ -290,7 +290,7 @@ p   {
         border: 1px solid var(--color-dark-white);
         border-radius: var(--border-radius);
         font-size:var(--font-regular);
-        padding: 8px 48px;
+        padding: 7px 10px;
     }
     .category__btn.active,
     .category__btn:hover {
@@ -493,5 +493,8 @@ p   {
         .testimonial__avater {
             width: 80px;
             height: 80px;
+        }
+        .category__btn{
+        margin: 2px;
         }
     }
