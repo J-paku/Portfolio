@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja-JP">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@100&display=swap" rel="stylesheet">
+
 
 <link rel="stylesheet" href="style.css">
 <script src="main.js" defer></script>
@@ -50,32 +51,60 @@
     </section>
     <!-- About -->
     <section id="about" class="section section__container">
-        <h1>About me</h1>
-        <p>
-            나를 잘 어필 할 수 있는 문장을 써라
-        </p>
+        <h1><i class="fa-regular fa-user"></i><br/>About me</h1>
+        <div class="about__table__container">
+        <table class="about__introduce">
+            <tbody>
+                <tr>
+                    <th class="about__th">Name</th>
+                    <td class="about__td about__name">朴 裁弘</td>
+                </tr>
+                <tr>
+                    <th class="about__th">Birthday</th>
+                    <td class="about__td">1994/05/25</td>
+                </tr>
+                <tr>
+                    <th class="about__th">Country</th>
+                    <td class="about__td">韓国</td>
+                </tr>
+                <tr>
+                    <th class="about__th">Live</th>
+                    <td class="about__td">滋賀県</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="div__h4__container">
+        <h3>
+            様々なアイデアを学んだスキルで作って行く過程を楽しんでいます。
+        </h3>
+        <h3>
+            いつも新しいスキルに恐れず、挑戦するエンジニアになります。
+        </h3>
+    </div>    
         <div class="about__majors">
-        <div class="major">
-            <div class="major__icon">
-                <i class="fa-brands fa-html5 fa-bounce"></i>
-            </div>
-            <h2 class="major__title">HTML</h2>
-            <div class="major__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque saepe pariatur dolore aliquid sint. Quae quas velit praesentium sed, asperiores expedita<</div>
-        </div>
             <div class="major">
-            <div class="major__icon">
-                <i class="fa-brands fa-css3-alt fa-bounce"></i>
+                <div class="major__icon">
+                    <i class="fa-brands fa-html5 fa-bounce"></i>
+                </div>
+                    <h2 class="major__title">HTML</h2>
+                    <div class="major__description">実務で使ったことはありませんが、大手企業のHP等  を参照しながら作りたていております。Web標準を理解しております。</div>
             </div>
-            <h2 class="major__title">CSS</h2>
-            <div class="major__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque saepe pariatur dolore aliquid sint. Quae quas velit praesentium sed, asperiores expedita</div>
-        </div>
-            <div class="major">
-            <div class="major__icon">
-                <i class="fa-brands fa-square-js fa-bounce"></i>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fa-brands fa-css3-alt fa-bounce"></i>
+                    </div>
+                <h2 class="major__title">CSS</h2>
+                    <div class="major__description">ブラウザーのレンダリング過程を理解しており、動的な機能を追加する際、Layout・Paint・Compositeを考えてコードを組み  ます。</div>
+                    </div>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fa-brands fa-square-js fa-bounce"></i>
+                    </div>
+                    <h2 class="major__title">javascript</h2>
+                <div class="major__description">読みやすいコードを組むよう、努力しております。  ES6の文法を使用し、理解しておりますが、ライブラリーの使用経験を足りないため、主に学習をしております。</div>
+                
             </div>
-            <h2 class="major__title">javascript</h2>
-            <div class="major__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque saepe pariatur dolore aliquid sint. Quae quas velit praesentium sed, asperiores expedita<</div>
-        </div>
         </div>
         <div class="about__jobs">
             <div class="job">
@@ -84,7 +113,7 @@
                 class="job__logo">
                 <div class="job__description">
                 <p class="job__name">Meitec Fielders</p>
-                <p class="job__period">えりかバボ</p>
+                <p class="job__period">EMB＝Erika Mazi Babo</p>
                 </div>
             </div>
             <div class="job"></div>
@@ -93,7 +122,7 @@
     <!-- Skill -->
     <section id="skill" class="section">
         <div class="section__container">
-        <h1>Skills</h1>
+        <h1><i class="fa-sharp fa-solid fa-desktop"></i> Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab similique, blanditiis consequatur libero eveniet natus rem suscipit animi mollitia iusto, iure magnam. Nisi labore, eveniet soluta commodi blanditiis explicabo facere?
@@ -118,7 +147,6 @@
                         <div class="skill__bar">
                             <div class="skill__value" style="width:90%;"></div>
                         </div>
-                    
                 </div>
                 <div class="skill">
                     <div class="skill_description">
@@ -154,7 +182,7 @@
     <!-- Work -->
     <section id="work" class="section">
         <div class="section__container">
-            <h1>My work</h1>
+            <h1><i class="fa-regular fa-folder-open"></i> My work</h1>
         <h2>Projects</h2>
         <div class="work__categories">
             <button class="category__btn active">All<span class="category__count">2</span></button>
