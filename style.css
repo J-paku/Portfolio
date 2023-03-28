@@ -112,7 +112,6 @@ p   {
         font-size: var(--font-medium);
         font-weight: var(--weight-bold);
     }
-
     .navbar__menu__item {
         padding: 8px 12px;
         margin: 0 4px;
@@ -147,7 +146,7 @@ p   {
     #home button,h1,h2{
         color: var(--color-white);
     }
-    
+
     .home__avatar {
         width: 250px;
         height: 250px;
