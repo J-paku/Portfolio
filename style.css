@@ -128,7 +128,7 @@ p   {
     }
     .navbar__toogle-btn {
         position: absolute;
-        top: 4px;
+        top: 9px;
         right: 4px;
         font-size: 1.5rem;
         color: var(--color-white);
@@ -510,10 +510,9 @@ p   {
             width: 100%;
             display: none;
             background-color: var(--color-pink);
-            height: 100%;
         }
         #navbar.navbar--dark{
-            padding: 0;
+            background-color: var(--color-pink);
         }
         .navbar__menu.open{
             display: block;
