@@ -58,6 +58,30 @@ document.addEventListener('scroll', () => {
     }
 });
 
+// Projects
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (ev) =>{
+    const filter = ev.target.dataset.filter || ev.target.parentNode.dataset.filter;
+    if(filter == null) {
+        return;
+    }
+    projectContainer.classList.add('anime-out');
+
+    //for(let project of projects), for(let i=0; i< projects.lengthi++){project = projects[i];と等しい}
+    projects.forEach((project) => {
+        if(filter === '*' || filter === project.dataset.type){
+            project.classList.remove('invisible');
+        }else{
+            project.classList.add('invisible');
+        }
+    });
+    setTimeout(() => {
+        projectContainer.classList.remove('anime-out');
+    }, 300);
+});
+
 
 
 function scrollIntoView(selector) {
