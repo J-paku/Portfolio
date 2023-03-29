@@ -107,7 +107,6 @@ p   {
         color: var(--color-white);
         padding: 0 1rem;
     }
-
     .navbar__logo {
         font-size: var(--font-medium);
         font-weight: var(--weight-bold);
@@ -510,6 +509,9 @@ p   {
             text-align: center;
             width: 100%;
             display: none;
+        }
+        .navbar__menu.open{
+            display: block;
         }
         .major{
             padding-right: 0;
