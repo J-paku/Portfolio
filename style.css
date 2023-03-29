@@ -55,7 +55,12 @@
         border: none;
         outline: none;
     }
-
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        vertical-align: bottom;
+        }
     /*   Typography */
 
 h1   {
