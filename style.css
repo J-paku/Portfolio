@@ -55,12 +55,7 @@
         border: none;
         outline: none;
     }
-    img {
-        max-width: 100%;
-        width: auto;
-        height: auto;
-        vertical-align: bottom;
-        }
+
     /*   Typography */
 
 h1   {
@@ -153,6 +148,7 @@ p   {
     }
 
     .home__avatar {
+        object-fit: cover;
         width: 250px;
         height: 250px;
         border-radius: 50%;
