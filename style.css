@@ -112,20 +112,20 @@ p   {
         font-size: var(--font-medium);
         font-weight: var(--weight-bold);
     }
+    .navbar__menu__item:first-child{
+        border:1px solid var(--color-white);
+        border-radius: var(--border-radius);
+    }
     .navbar__menu__item {
         padding: 8px 12px;
         margin: 0 4px;
         cursor: pointer;
         border-radius: var(--border-radius);
-    }
-    .navbar__menu__item:first-child{
-        border:1px solid var(--color-white);
-    }
-    .navbar__menu__item.active {
-        border: 1px solid var(--color-white);
+        border:1px solid transparent;
     }
     .navbar__menu__item:hover   {
         background-color: var(--color-dark-pink);
+        border: 1px solid var(--color-white);
     }
     .navbar__toogle-btn {
         position: absolute;
@@ -318,12 +318,12 @@ p   {
         font-size:var(--font-regular);
         padding: 7px 10px;
     }
-    .category__btn.active,
+    .category__btn.selected,
     .category__btn:hover {
         background-color: var(--color-pink);
         color : var(--color-white);
     }
-    .category__btn.active .category__count,
+    .category__btn.selected .category__count,
     .category__btn:hover .category__count{
         opacity: 1;
         top:0;
