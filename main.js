@@ -87,8 +87,7 @@ workBtnContainer.addEventListener('click', (ev) =>{
     target.classList.add('selected');
 
     projectContainer.classList.add('anime-out');
-
-
+    setTimeout(() => {
     //for(let project of projects), for(let i=0; i< projects.lengthi++){project = projects[i];と等しい}
     projects.forEach((project) => {
         if(filter === '*' || filter === project.dataset.type){
@@ -97,9 +96,9 @@ workBtnContainer.addEventListener('click', (ev) =>{
             project.classList.add('invisible');
         }
     });
-    setTimeout(() => {
+
         projectContainer.classList.remove('anime-out');
-    }, 300);
+    }, 250);
 });
 
 
