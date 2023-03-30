@@ -387,21 +387,22 @@ p   {
         transition: all 0.25s ease-in;
     }
     .project:hover .project__description {
-        opacity: 0.8;
+        opacity: 0.9;
         transform: scale(1)
     }
     .project__description h3 {
-        color: var(--color-white);
+        color: var(--color-orange);
     }
 
     .project__description h3:after {
         content: '';
         position: relative;
         display: block;
-        left:50%;
+        left:55%;
         margin-left: -12px;
         margin-top : 8px;
-        width: 25px;
+        width: 50px;
+        transform: translateX(-50%);
         height: 2px;
         background-color: var(--color-dark-white);
     }
