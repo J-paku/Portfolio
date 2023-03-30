@@ -121,6 +121,8 @@ p   {
         cursor: pointer;
         border-radius: var(--border-radius);
         border:1px solid transparent;
+        font-weight: var(--weight-semi-bold);
+        font-size: var(--font-regular);
     }
     .navbar__menu__item:hover   {
         background-color: var(--color-dark-pink);
@@ -451,15 +453,15 @@ p   {
         font-size: var(--font-regular);
         color: var(--color-white);
         border-radius: 50%;
-        padding: 10px;
-        background-color: var(--color-pink);
+        padding: 13px;
+        background-color: var(--color-grey);
         opacity: 0;
         pointer-events: none;
         transition: all .25s ease-in;
     }
 
     .topPage.visible{
-        opacity: 0.95;
+        opacity: 0.9;
         pointer-events: auto;
     }
 
