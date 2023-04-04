@@ -29,8 +29,10 @@ navbarMenu.addEventListener('click', (event) => {
 
 // Navbar toggle button for small screen
 const navbarToggleBtn = document.querySelector('.navbar__toogle-btn');
+const hambergurTransform = document.querySelector('.el_humburger_bar');
 navbarToggleBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
+    hambergurTransform.classList.toggle('top');
 });
 
 

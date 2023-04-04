@@ -500,8 +500,35 @@ p   {
     /* For below 768px screen width  */
     @media screen and (max-width: 768px) {
         .navbar__toogle-btn {
+            /* display: block; */
             display: block;
+            position: fixed;
+            top: 0.4rem;
+            right: 1rem;
+            width: 4.4rem;
+            height: 4.4rem;
+            padding-top: 1px;
+            padding-top: 0px;
+            z-index: 20;
+            cursor: pointer;
+            pointer-events: auto;
+            color: #000;
+            text-align: center;
         }
+
+        .navbar__toogle-btn span{
+            display: flex;
+            width: 60%;
+            margin: 0 auto 0.8rem;
+            height: 0.2rem;
+            background: #504084;
+            transition: opacity 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955), transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        }
+        .navbar__toogle-btn span:first-child {
+            transform: translateY(17px) rotate(-45deg); }
+        .navbar__toogle-btn span:nth-child(2) {opacity: 0;}
+        .navbar__toogle-btn span:last-child {
+            top:26px; }
         #navbar {
             flex-direction: column;
             align-items: flex-start;
