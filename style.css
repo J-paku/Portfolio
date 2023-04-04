@@ -169,6 +169,7 @@ p   {
     /*Section common  */
     .section{
         padding: 50px;
+        padding-top: 60px;
         text-align: center;
         margin: auto;
     }
