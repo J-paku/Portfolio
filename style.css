@@ -111,6 +111,7 @@ p   {
         font-size: var(--font-medium);
         font-weight: var(--weight-bold);
     }
+    .navbar__logo .fa-umbrella-beach{color:#0b60fd;}
     .navbar__menu__item:first-child{
         border:1px solid var(--color-white);
         border-radius: var(--border-radius);
@@ -150,8 +151,8 @@ p   {
 
     .home__avatar {
         object-fit: cover;
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
         border-radius: 50%;
         border: 2px solid var(--color-white);
     }
@@ -317,7 +318,8 @@ p   {
         border: 1px solid var(--color-dark-white);
         border-radius: var(--border-radius);
         font-size:var(--font-regular);
-        padding: 7px 10px;
+        padding: 9px 31px 9px 12px;
+        position: relative;
     }
     .category__btn.selected,
     .category__btn:hover {
@@ -327,7 +329,7 @@ p   {
     .category__btn.selected .category__count,
     .category__btn:hover .category__count{
         opacity: 1;
-        top:0;
+        top:5px;
     }
     .category__count {
         background-color: var(--color-orange);
@@ -337,9 +339,9 @@ p   {
         height: 24px;
         line-height: 24px;
         display: inline-block;
-        position: relative;
+        position: absolute;
         top: -20px;
-        left: 4px;
+        right: 4px;
         margin-left: 4px;
         opacity: 0;
         transition: all .25s ease-out;
@@ -502,33 +504,7 @@ p   {
         .navbar__toogle-btn {
             /* display: block; */
             display: block;
-            position: fixed;
-            top: 0.4rem;
-            right: 1rem;
-            width: 4.4rem;
-            height: 4.4rem;
-            padding-top: 1px;
-            padding-top: 0px;
-            z-index: 20;
-            cursor: pointer;
-            pointer-events: auto;
-            color: #000;
-            text-align: center;
         }
-
-        .navbar__toogle-btn span{
-            display: flex;
-            width: 60%;
-            margin: 0 auto 0.8rem;
-            height: 0.2rem;
-            background: #504084;
-            transition: opacity 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955), transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        }
-        .navbar__toogle-btn span:first-child {
-            transform: translateY(17px) rotate(-45deg); }
-        .navbar__toogle-btn span:nth-child(2) {opacity: 0;}
-        .navbar__toogle-btn span:last-child {
-            top:26px; }
         #navbar {
             flex-direction: column;
             align-items: flex-start;
@@ -546,10 +522,19 @@ p   {
         }
         .navbar__menu.open{
             display: block;
-            position: relative;
+        }
+        .section {
+            padding : 16px;
+            padding-top : 40px;
+        }
+        .div__h4__container h3 {
+            text-align: center;
+            padding: 0 16px;
         }
         .major{
+            max-width: 100%;
             margin-bottom: 38px;
+            padding: 0;
         }
         .about__majors{
             flex-direction: column;
