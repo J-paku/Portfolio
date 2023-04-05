@@ -299,6 +299,9 @@ p   {
     .skillset__right {
         flex-basis: 40%;
     }
+    .section__container p {
+        color: var(--color-white);
+    }
     .tools {
         background-color: var(--color-grey);
     }
