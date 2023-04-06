@@ -154,7 +154,7 @@ window.addEventListener('wheel', () => {
     selectNavItem(navItems[selectedNavIndex]);
 });
 
-window.addEventListener('move', () => {
+window.addEventListener('touchmove', () => {
     if(window.scrollY === 0) {
         selectedNavIndex = 0 ;
     } else if (Math.round(window.scrollY + window.innerHeight) >= document.body.scrollHeight){
