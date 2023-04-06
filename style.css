@@ -112,7 +112,7 @@ p   {
         font-weight: var(--weight-bold);
     }
     .navbar__logo .fa-umbrella-beach{color:#0b60fd;}
-    .navbar__menu__item.{
+    .navbar__menu__item{
         border:1px solid var(--color-white);
         border-radius: var(--border-radius);
     }
