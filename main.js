@@ -100,8 +100,62 @@ workBtnContainer.addEventListener('click', (ev) =>{
     }, 250);
 });
 
+// 1.すべての要素を持ってくる
+// 2.IntersectionObserverを用いてすべてのSectionを観察する
+// 3.ビューポートに映ってるNavbarを活性化する
+
+const sectionsIds = [
+    '#home',
+    '#about',
+    '#skill',
+    '#work',
+    '#contact',
+];
+const navItems = sectionsIds.map(id => 
+    document.querySelector(`[data-link="${id}"]`));
+const sections = sectionsIds.map(id => document.querySelector(id));
+// console.log(navItems);
+
+let selectedNavIndex = 0;
+let selectedNavItem = navItems[0];
+function selectNavItem(selected) {
+    selectedNavItem.classList.remove('active');
+    selectedNavItem = selected;
+    selectedNavItem.classList.add('active');
+}
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3,
+};
+const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting && entry.intersectionRatio > 0) {
+            const index = sectionsIds.indexOf(`#${entry.target.id}`);
+
+            //스크롤링이 아래로 되어서 페이지가 올라옴
+            if(entry.boundingClientRect.y < 0) {
+                selectedNavIndex = index + 1;
+            } else {
+                selectedNavIndex = index - 1;
+            }
+        }
+    });
+};
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+sections.forEach(section => observer.observe(section));
+
+window.addEventListener('wheel', () => {
+    if(window.scrollY === 0) {
+        selectedNavIndex = 0 ;
+    } else if (Math.round(window.scrollY + window.innerHeight) >= document.body.scrollHeight){
+        selectedNavIndex = navItems.length -  1;
+    }
+    selectNavItem(navItems[selectedNavIndex]);
+});
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
+    selectNavItem(navItems[sectionsIds.indexOf(selector)]);
 }
