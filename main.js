@@ -154,6 +154,15 @@ window.addEventListener('wheel', () => {
     selectNavItem(navItems[selectedNavIndex]);
 });
 
+window.addEventListener('move', () => {
+    if(window.scrollY === 0) {
+        selectedNavIndex = 0 ;
+    } else if (Math.round(window.scrollY + window.innerHeight) >= document.body.scrollHeight){
+        selectedNavIndex = navItems.length -  1;
+    }
+    selectNavItem(navItems[selectedNavIndex]);
+});
+
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
