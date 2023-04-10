@@ -1,0 +1,60 @@
+@font-face {
+    font-family: YouTubeSansBlack;
+    src: url(fonts/YouTubeSansDarkBold.otf)
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+.header__container {
+    display: flex;
+    font-family: 'YoutubeSansBlack';
+    font-size: 1.5rem;
+    height: 56px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__start {
+    display: flex;
+    max-width: 100%;
+    justify-content: flex-start;
+    flex: 0 1 728px;
+    align-items: flex-end;
+}
+
+.header__start span {
+    cursor:default;
+}
+
+.header__end {
+    display: flex;
+    flex-flow: row;
+    justify-content:flex-end;
+    margin-right: 3%;
+}
+
+.header__end i {
+    font-size: 1.5rem;
+    margin-left: 7px;
+}
+
+video {
+    width: 100%    !important;
+    height: 100%   !important;
+}
