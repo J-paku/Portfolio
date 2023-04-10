@@ -46,7 +46,6 @@ img {
     display: flex;
     flex-flow: row;
     justify-content:flex-end;
-    margin-right: 3%;
 }
 
 .header__end i {
