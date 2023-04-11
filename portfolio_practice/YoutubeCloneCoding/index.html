@@ -2,7 +2,11 @@
 <html lang="ja">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/youtube_logo.png">
     <script src="https://kit.fontawesome.com/f99fdf64a3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&    family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PakuTube</title>
@@ -11,10 +15,10 @@
     <!-- Header -->
     <header>
         <div class="header__container">
-            <div class="header__start"><img src="img/logo.png" alt=""><span>PakuTube</span></div>
+            <div class="header__start"><i class="fa-brands fa-youtube"></i><span>PakuTube</span></div>
             <div class="header__end">
                 <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <button class="header__showMore"><i class="fa-solid fa-bars"></i></button>
+                <button class="header__showMore"><i class="fa-solid fa-ellipsis-vertical"></i></button>
             </div>
         </div>
     </header>
@@ -24,8 +28,10 @@
         <video controls src="videos/大雪.mp4"></video>
     </section>
 
+<div class="infoAndUpNext">
+
     <!-- Video Info -->
-    <section class="info">
+    <section id="#info" class="info" >
         <div class="metadata">
             <ul class="hashtags">
                 <li>#大雪</li>
@@ -34,15 +40,86 @@
             </ul>
             <div class="titleAndButton">
                 <span class="title">
-                    大雪にテンションが上がった子たちの踊り
+                    大雪にテンションが上がった子たちの踊りLorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore consequatur quae id magni? Consectetur expedita neque assumenda repellendus laborum commodi aspernatur, ipsa atque ad accusamus quasi? Minus, blanditiis. Reprehenderit, accusamus?
+                    <10></10>
                 </span>
+                <button class="moreBtn">
+                    <i class="fas fa-caret-down"></i>
+                </button>
             </div>
-            <div class="views"></div>
+                <span class="views">1557回視聴 ２日前</span>
         </div>
-        <div class="actions"></div>
-        <div class="channel"></div>
-    </section>
-    <section class="upNext"></section>
 
+    <!-- Action -->
+        <ul class="actions">
+            <li>
+                <button><i class="active fa-solid fa-thumbs-up"></i><span>1</span></button>
+            </li>
+            <li>
+                <button><i class="fa-sharp fa-solid fa-thumbs-down"></i><span>15</span></button>
+            </li>
+            <li>
+                <button><i class="fa-solid fa-share"></i><span>共有</span></button>
+            </li>
+            <li>
+                <button><i class="fa-solid fa-plus"></i><span>保存</span></button>
+            </li>
+            <li>
+                <button><i class="fa-solid fa-flag"></i><span>報告</span></button>
+            </li>
+        </ul>
+
+    <!-- channel -->
+        <div class="channel">
+            <div class="metadata">
+                <img src="img/profile/me.png" alt="">
+                <div class="info">
+                    <span class="name">パク</span>
+                    <span class="subscribers">チャンネル登録者数 3人</span>
+                </div>
+            </div>
+            <button class="subscribe">チャンネル登録</button>
+        </div>
+    </section>
+
+    <!-- upNext -->
+    <section class="upNext" id="#upNext">
+        <span class="title">次の動画</span>
+        <ul>
+            <li class="item">
+                <div class="img"><img src="img/thums/1.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">おでんくんがHTMLコーダーになるのは可能・・？</span>
+                    <span class="name">パク</span>
+                    <span class="views">82万回視聴</span>
+                </div>
+                <button class="more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </li>
+
+            <li class="item">
+                <div class="img">
+                    <img src="img/thums/2.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">おでんくんが大阪でHTMLコーダーになるのは可能・・！？</span>
+                    <span class="name">パク</span>
+                    <span class="views">82万回視聴</span>
+                </div>
+                <button class="more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </li>
+            
+            <li class="item">
+                <div class="img">
+                    <img src="img/thums/3.jpg" alt=""></div>
+                <div class="info">
+                    <span class="title">おでんくんが大阪でHTMLコーダーになるのは可能・・！？</span>
+                    <span class="name">パク</span>
+                    <span class="views">82万回視聴</span>
+                </div>
+                <button class="more"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </li>
+    </section>
+</div>
 </body>
 </html>
+    
+    
