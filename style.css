@@ -58,6 +58,7 @@
         -webkit-appearance:none;  /* Safari and Chrome */
         appearance:none;
         isolation: isolate;
+        -webkit-border-radius: 0;
     }
 
     /*   Typography */
