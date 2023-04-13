@@ -510,10 +510,13 @@ p   {
             /* display: block; */
             display: block;
             transition: all .25s ease-out;
+            background-color: transparent;
         }
         .navbar__toogle-btn.open{
-            background-color: var(--color-dark-pink);
             -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background-color: var(--color-dark-pink);
         }
 
         #navbar {
