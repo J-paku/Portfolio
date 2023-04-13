@@ -231,7 +231,6 @@ p   {
         max-width: 100%;
         text-align: left;
     }
-    .section__h1{color:var(--color-black) !important; }
     .about__introduce{ padding: 3rem 0;}
     .div__h4__container{display: inline-block;}
     .about__th {
@@ -315,7 +314,7 @@ p   {
     }
     /* Work */
     .section__container h1, h2, p{
-        color: var(--color-white);
+        color: var(--color-black);
     }
     .work__categories {
         margin: 40px;
