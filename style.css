@@ -519,10 +519,12 @@ p   {
             background-color: transparent;
         }
         .navbar__toogle-btn.open{
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
             border-radius: 50%;
             background-color: var(--color-dark-pink);
+            isolation: isolate;
         }
 
         #navbar {
