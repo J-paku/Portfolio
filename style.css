@@ -509,7 +509,13 @@ p   {
         .navbar__toogle-btn {
             /* display: block; */
             display: block;
+            transition: all .25s ease-out;
         }
+        .navbar__toogle-btn.open{
+            background-color: var(--color-dark-pink);
+            border-radius: 50%;
+        }
+
         #navbar {
             flex-direction: column;
             align-items: flex-start;
@@ -529,22 +535,27 @@ p   {
         .navbar__menu.open{
             display: block;
         }
+
         .section {
             padding : 16px;
             padding-top : 40px;
         }
+
         .div__h4__container h3 {
             text-align: center;
             padding: 0 16px;
         }
+
         .major{
             max-width: 100%;
             margin-bottom: 38px;
             padding: 0;
         }
+
         .about__majors{
             flex-direction: column;
         }
+
         .skillset {
             flex-direction: column;
         }
