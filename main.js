@@ -23,6 +23,7 @@ navbarMenu.addEventListener('click', (event) => {
     }
     navbarMenu.classList.remove('open');
     scrollIntoView(link);
+    navbarToggleBtn.classList.remove('open');
 });
 
 
