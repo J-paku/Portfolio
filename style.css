@@ -35,6 +35,9 @@
     /* Universal tags */
     * {
         box-sizing: border-box;
+        -moz-appearance:none;  /* Firefox */
+        -webkit-appearance:none;  /* Safari and Chrome */
+        appearance:none;
     }
     body {
         margin: 0;
