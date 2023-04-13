@@ -518,6 +518,7 @@ p   {
         .navbar__toogle-btn.open{
             background-color: var(--color-dark-pink);
             border-radius: 50%;
+            -webkit-border-radius: 50%;
         }
 
         #navbar {
