@@ -267,14 +267,9 @@ p   {
     #skill {
         background-color: var(--color-pink);
     }
-    #skill .section__container h1,h2 {
-        color:var(--color-white) !important;
-    }
-    #skill .section__container p {
-        font-size: var(--font-small);
+    #skill p {
         font-weight: var(--weight-semi-bold);
     }
-
     .skill {
         margin-bottom: 32px;
     }
@@ -519,11 +514,7 @@ p   {
             background-color: transparent;
         }
         .navbar__toogle-btn.open{
-            z-index: 1;
-            overflow: hidden;
-            border-radius: 50%;
             background-color: var(--color-dark-pink);
-            isolation: isolate;
         }
 
         #navbar {
