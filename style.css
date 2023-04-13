@@ -313,8 +313,8 @@ p   {
         padding: 20px;
     }
     /* Work */
-    .section__container h1, h2{
-        color: var(--color-black);
+    .section__container h1, h2, p{
+        color: var(--color-white);
     }
     .work__categories {
         margin: 40px;
