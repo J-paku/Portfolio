@@ -519,7 +519,6 @@ p   {
             background-color: transparent;
         }
         .navbar__toogle-btn.open{
-            position: relative;
             z-index: 1;
             overflow: hidden;
             border-radius: 50%;
