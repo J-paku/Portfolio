@@ -37,6 +37,14 @@ function caculate(command, a, b){
     switch (command) {
         case 'add':
             return a + b;
+        case 'sub':
+            return a - b;
+        case 'div':
+            return a / b;
+        case 'mul':
+            return a + b;
+        case 'remainder':
+            return a % b;    
     }
-    console.log(caculate('add',3,5));
 }
+console.log(caculate('add',3,5));
