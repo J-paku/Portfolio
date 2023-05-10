@@ -35,13 +35,6 @@ navbarToggleBtn.addEventListener('click', (sex) => {
 });
 
 
-// Handle click on "contact me" button on home
-const homeContactBtn = document.querySelector('.home__button');
-homeContactBtn.addEventListener('click', () => {
-    scrollIntoView('#contact');
-});
-
-
 // Handle the TopPage Button
 const topPageButton = document.querySelector('.topPage');
 topPageButton.addEventListener('click', () => {
@@ -165,8 +158,35 @@ window.addEventListener('touchmove', () => {
     selectNavItem(navItems[selectedNavIndex]);
 });
 
+
+// Contact　Meモーダル
+const ContactModal = document.querySelector('#modal');
+const homeContactBtn = document.querySelector('.home__button');
+homeContactBtn.addEventListener('click', (e) => {
+    ContactModal.style.display = "flex";
+});
+
+ContactModal.addEventListener('click', (e)=>{
+    const evTarget = e.target;
+    if(evTarget.classList.contains("modal-overlay")) {
+        ContactModal.style.display = "none";
+    }
+});
+
+const ModalClose = document.querySelector('#closeModal');
+ModalClose.addEventListener('click', () => {
+    ContactModal.style.display = "none";
+});
+
+// function あつまり
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
     selectNavItem(navItems[sectionsIds.indexOf(selector)]);
+}
+
+function Contact_mail_click() {
+    if(!confirm('メールを送りますか？')){
+        return false;
+    }
 }

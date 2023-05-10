@@ -16,7 +16,34 @@
 <script src="main.js" defer></script>
 <!-- defer은 html 로드와 동시에 javascript 로드 -->
 <script src="https://kit.fontawesome.com/f99fdf64a3.js" crossorigin="anonymous"></script>
+<!-- emailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('j7cPEAAPTA-jGN5Aa');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_fwu6afg', 'tottannim', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+<!-- emailJS End -->
 </head>
+<body>
+
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
@@ -37,12 +64,35 @@
     </nav>
     <!-- Home -->
     <section id="home" class="section">
+        
         <div class="home__container">
             <img src="imgs/Me.jpg" alt="Park profile photo" class="home__avatar">
             <h1 class="home__title">Hello <br />I'm Paku</h1>
             <h2 class="home__description">関西に住んでいるジュニアエンジニア</h2>
             <button class="home__button">Contact Me</button>
         </div>
+
+        <div id="modal" class="modal-overlay">
+            <div class="modal-window">
+                <div class="title">
+                    <h2>모달</h2>
+                </div>
+                <button id="closeModal"><div class="close-area">X</div></button>
+                <div class="modal__content">
+                    <form id="contact_form">
+                        <input type="hidden" name="contact_number">
+                        <label>Name</label>
+                        <input type="text" name="to_name">
+                        <label>Email</label>
+                        <input type="email" name="from_email">
+                        <label>Message</label>
+                        <textarea class="modal__message" name="message_html"></textarea>
+                        <input id="Mail_send" type="submit" value="Send" onclick="Contact_mail_click()">
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </section>
     <!-- About -->
     <section id="about" class="section section__container">
@@ -77,7 +127,6 @@
             いつも新しいことにチャレンジし続けるエンジニアになります！
         </h3>
     </div>    
-
         <div class="about__majors">
             <div class="major">
                 <div class="major__icon">
@@ -226,11 +275,11 @@
             data-type="javascript"
             target="blank"
             >
-            <img class="project__img" src="imgs/comingSoon_2.png" alt="navbar" />
+            <img class="project__img" src="imgs/comingSoon.png" alt="navbar" />
             <div class="project__description">
                 <h3>Shopping mall game</h3>
                 <span>HTML, CSS, JavaScript, Json</span>
-                <span>2023/4/15作業予定</span>
+                <span>5月中公開予定</span>
             </div>
             </a>
             <a href="" 
