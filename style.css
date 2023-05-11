@@ -120,6 +120,9 @@ p   {
         bottom: -5px;
         padding: 10px;
     }
+    .title > h2 {
+        color: var(--color-white);
+    }
     #modal .title {
         padding-left: 10px;
         display: inline;
