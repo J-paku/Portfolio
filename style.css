@@ -96,6 +96,7 @@ p   {
     /* Contact Me modal */
     .modal__wrapper{
         transform: translateY(0px);
+        isolation: isolate;
     }
     #modal.modal-overlay {
         width: 100%;
