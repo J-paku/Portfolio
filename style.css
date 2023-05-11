@@ -35,6 +35,10 @@
     /* Universal tags */
     * {
         box-sizing: border-box;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
     }
     body {
         margin: 0;
@@ -90,10 +94,14 @@ p   {
 }   
 
     /* Contact Me modal */
+    .modal__wrapper{
+        transform: translateY(0px);
+    }
     #modal.modal-overlay {
         width: 100%;
         height: 100%;
         position: absolute;
+        z-index: 0;
         left: 0;
         top: 0;
         display: none;
@@ -117,6 +125,8 @@ p   {
         width: 80%;
         height: 70vh;
         position: relative;
+        z-index: 0;
+        z-index: 0;
         bottom: -100px;
         padding: 10px;
     }
@@ -135,6 +145,7 @@ p   {
     }
     #modal #closeModal {
         position: absolute;
+        z-index: 0;
         right: 1rem;
         font-size: var(--font-medium);
     }
@@ -220,6 +231,7 @@ p   {
     }
     .navbar__toogle-btn {
         position: absolute;
+        z-index: 0;
         top: 9px;
         right: 2px;
         font-size: 1.5rem;
@@ -411,6 +423,7 @@ p   {
         font-size:var(--font-regular);
         padding: 9px 31px 9px 12px;
         position: relative;
+        z-index: 0;
     }
     .category__btn.selected,
     .category__btn:hover {
@@ -431,6 +444,7 @@ p   {
         line-height: 24px;
         display: inline-block;
         position: absolute;
+        z-index: 0;
         top: -20px;
         right: 4px;
         margin-left: 4px;
@@ -450,6 +464,7 @@ p   {
     }
     .project {
         position: relative;
+        z-index: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -469,6 +484,7 @@ p   {
     }
     .project__description{
         position: absolute;
+        z-index: 0;
         background-color: black;
         display: flex;
         flex-direction: column;
@@ -492,6 +508,7 @@ p   {
     .project__description h3:after {
         content: '';
         position: relative;
+        z-index: 0;
         display: block;
         left:55%;
         margin-left: -12px;
