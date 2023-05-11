@@ -124,6 +124,8 @@ p   {
         position: relative;
         bottom: -10px;
         padding: 10px;
+        z-index: 0;
+        isolation: isolate;
     }
     .title > h2 {
         color: var(--color-white);
@@ -141,6 +143,7 @@ p   {
     #modal #closeModal {
         position: absolute;
         z-index: 0;
+        isolation: isolate;
         right: 1rem;
         font-size: var(--font-medium);
     }

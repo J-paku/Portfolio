@@ -187,9 +187,9 @@ function scrollIntoView(selector) {
 }
 
 function Contact_mail_click() {
-    if(!confirm('メールを送りますか？')){
-        return false;
-    }
-    alert('送信完了しました。');
-    ContactModal.style.display = "none";
+    if(confirm('メールを送りますか？')){
+        alert('送信完了しました。');
+        ContactModal.style.display = "none";
+    }else{return false;}
+    
 }
