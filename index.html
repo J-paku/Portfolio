@@ -73,26 +73,27 @@
             <h2>新しい機能ができました！「2023/05/10 New」</h2>
         </div>
 
-        <div id="modal" class="modal-overlay">
-            <div class="modal-window">
-                <div class="title">
-                    <h2>お問い合わせ</h2>
-                </div>
-                <button id="closeModal"><div class="close-area">X</div></button>
-                <div class="modal__content">
-                    <form id="contact_form">
-                        <input type="hidden" name="contact_number">
-                        <label>Name</label>
-                        <input type="text" name="to_name">
-                        <label>Email</label>
-                        <input type="email" name="from_email">
-                        <label>Message</label>
-                        <textarea class="modal__message" name="message_html"></textarea>
-                        <input id="Mail_send" type="submit" value="送信する" onclick="Contact_mail_click()">
-                    </form>
+            <div id="modal" class="modal-overlay">
+                <div class="modal-window">
+                    <div class="title">
+                        <h2>お問い合わせ</h2>
+                    </div>
+                    <button id="closeModal"><div class="close-area">X</div></button>
+                    <div class="modal__content">
+                        <form id="contact_form">
+                            <input type="hidden" name="contact_number">
+                            <label>Name</label>
+                            <input type="text" name="to_name">
+                            <label>Email</label>
+                            <input type="email" name="from_email">
+                            <label>Message</label>
+                            <textarea>class="modal__message" name="message_html"></textarea>
+                            <input id="Mail_send" type="submit" value="送信する"    onclick="Contact_mail_click()">
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+
     </section>
     <!-- About -->
     <section id="about" class="section section__container">
