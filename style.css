@@ -166,7 +166,7 @@ p   {
 
     #Mail_send{
         margin-top: 1rem;
-        padding:20px;
+        padding:0.4rem;
         border-radius: var(--border-radius);
     }
 

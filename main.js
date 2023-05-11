@@ -164,6 +164,7 @@ const ContactModal = document.querySelector('#modal');
 const homeContactBtn = document.querySelector('.home__button');
 homeContactBtn.addEventListener('click', (e) => {
     ContactModal.style.display = "flex";
+    ContactModal.style.margin = "0 0 100px 0";
 });
 
 ContactModal.addEventListener('click', (e)=>{
