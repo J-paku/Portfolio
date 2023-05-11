@@ -117,7 +117,7 @@ p   {
         width: 80%;
         height: 70vh;
         position: relative;
-        bottom: -5px;
+        bottom: -100px;
         padding: 10px;
     }
     .title > h2 {
