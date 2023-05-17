@@ -191,5 +191,5 @@ function Contact_mail_click() {
         alert('送信完了しました。');
         ContactModal.style.display = "none";
     }else{return false;}
-    
+    // 
 }
