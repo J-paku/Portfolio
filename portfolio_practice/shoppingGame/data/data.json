@@ -1,0 +1,102 @@
+{
+    "items": [
+        {
+        "type": "tshirt", 
+        "gender": "femail",
+        "size": "large",
+        "color":"pink",
+        "image": "img/pink_t.png"
+        },
+        {
+        "type": "pants", 
+        "gender": "mail",
+        "size": "small",
+        "color":"blue",
+        "image": "img/blue_p.png"
+        },
+        {
+        "type": "pants", 
+        "gender": "mail",
+        "size": "large",
+        "color":"yellow",
+        "image": "img/yellow_p.png"
+        },
+        {
+        "type": "skirt", 
+        "gender": "mail",
+        "size": "large",
+        "color":"yellow",
+        "image": "img/yellow_s.png"
+        },
+        {
+        "type": "tshirt", 
+        "gender": "mail",
+        "size": "large",
+        "color":"blue",
+        "image": "img/blue_t.png"
+        },
+        {
+        "type": "tshirt", 
+        "gender": "mail",
+        "size": "large",
+        "color":"blue",
+        "image": "img/blue_t.png"
+        },
+        {
+        "type": "pants", 
+        "gender": "femail",
+        "size": "small",
+        "color":"pink",
+        "image": "img/pink_p.png"
+        },
+        {
+        "type": "tshirt", 
+        "gender": "femail",
+        "size": "large",
+        "color":"pink",
+        "image": "img/pink_t.png"
+        },
+        {
+        "type": "pants", 
+        "gender": "mail",
+        "size": "small",
+        "color":"blue",
+        "image": "img/blue_p.png"
+        },
+        {
+        "type": "pants", 
+        "gender": "mail",
+        "size": "large",
+        "color":"yellow",
+        "image": "img/yellow_p.png"
+        },
+        {
+        "type": "skirt", 
+        "gender": "mail",
+        "size": "large",
+        "color":"yellow",
+        "image": "img/yellow_s.png"
+        },
+        {
+        "type": "skirt", 
+        "gender": "femail",
+        "size": "small",
+        "color":"blue",
+        "image": "img/blue_s.png"
+        },
+        {
+        "type": "tshirt", 
+        "gender": "mail",
+        "size": "large",
+        "color":"blue",
+        "image": "img/yellow_t.png"
+        },
+        {
+        "type": "pants", 
+        "gender": "femail",
+        "size": "small",
+        "color":"pink",
+        "image": "img/pink_p.png"
+        }
+    ]
+}
